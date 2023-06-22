@@ -1,0 +1,16 @@
+server:
+  port: 19000
+spring:
+  application:
+    name: rate-service
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/sampledb
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
